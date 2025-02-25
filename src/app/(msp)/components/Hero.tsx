@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "./Container";
-import heroImg from "../hero.png";
+import heroImg from "../img/hero1.png";
 
 export const Hero = () => {
   return (
@@ -16,8 +16,8 @@ export const Hero = () => {
               learning powered analytical tools for bacteria biofilms growth
               kinetics, along with the tools plateform also features several
               publications on the topic bacterial biofilm. Currently tools are
-              limited to Salmonella Typhi bacteria but biofilm-spec aims to
-              extend the tools to various other bacterial and fungi types.
+              limited to Salmonella Typhi bacteria but MicroSpec aims to extend
+              the tools to various other bacterial and fungi types.
             </p>
 
             <div className="flex flex-col items-start space-y-8 sm:space-x-8 sm:space-y-0 sm:items-center sm:flex-row">

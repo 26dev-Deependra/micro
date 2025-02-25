@@ -20,7 +20,7 @@ export const Navbar = () => {
           <span className="flex items-center space-x-2 text-xl font-medium text-blue-600 dark:text-gray-100">
             <span>
               <Image
-                src="/img/QyronQor.jpg"
+                src="/img/logo.png"
                 width="32"
                 alt="N"
                 height="32"

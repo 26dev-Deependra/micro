@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex flex-col">
             <div className="flex items-center space-x-2 text-xl font-medium text-blue-600 dark:text-gray-100">
               <Image
-                src="/img/QyronQor.jpg"
+                src="/img/logo.png"
                 alt="N"
                 width="32"
                 height="32"

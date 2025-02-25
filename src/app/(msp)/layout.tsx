@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MicroSpec",
   description: "MicroSpec products",
+  icons: {
+    icon: "./img/logo.png", // Path to your icon
+  },
 };
 
 export default function RootLayout({
