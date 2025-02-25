@@ -4,19 +4,19 @@ export default function about() {
   return (
     <div className="p-10">
       <SectionTitle preTitle="About Us" title="Who We Are ?">
-        "We are a team of three from National Institute of Technology , Raipur
+        We are a team of three from National Institute of Technology , Raipur
         working on MicroSpec which is an attempt to introduce machine learning
         analytics to the biofillm kinetics thus providing a before hand standard
-        for microbial biofilms. "
+        for microbial biofilms.
       </SectionTitle>
 
       <Testimonials />
 
       <SectionTitle preTitle="" title="Aim And Objectives">
-        "We aim to provide a machine learning powered analytical tool for
+        We aim to provide a machine learning powered analytical tool for
         microbial biofilms. Initailly our tools are limited to Salmonella Typhi
         and we have objectives to extend them to other types of bacteria and
-        Fungi."
+        Fungi.
       </SectionTitle>
     </div>
   );
