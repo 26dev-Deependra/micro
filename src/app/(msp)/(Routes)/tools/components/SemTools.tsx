@@ -79,6 +79,22 @@ export default function SemTools() {
                   Optical Density (OD):{" "}
                   <span className="text-blue-600">{result.toFixed(2)}</span>
                 </p>
+                <p className="text-md text-gray-700 dark:text-gray-300 mt-2">
+                  Biofilm Stage:{" "}
+                  <span className="font-bold text-green-600">
+                    {result >= 0.15 && result <= 0.2
+                      ? "Initial Attachment"
+                      : result >= 0.21 && result <= 0.26
+                      ? "Irreversible Attachment"
+                      : result >= 0.27 && result <= 0.32
+                      ? "Microcolony Formation"
+                      : result >= 0.33 && result <= 0.39
+                      ? "Biofilm Maturation"
+                      : result >= 0.4 && result <= 0.45
+                      ? "Dispersion"
+                      : "OD out of expected range"}
+                  </span>
+                </p>
               </div>
             )}
           </div>
