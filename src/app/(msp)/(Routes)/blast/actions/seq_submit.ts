@@ -1,6 +1,7 @@
 // submitProteinSequence.ts
 export const submitProteinSequence = async (
   sequence: string,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setResults: (matches: any[]) => void
 ) => {
   console.log("🚀 Submitting protein sequence:", sequence);
