@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS UI Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-center mb-6">Tailwind CSS UI Guide</h1>
+
+        <!-- Flexbox Example -->
+        <h2 class="text-xl font-semibold mt-6">1. Flexbox</h2>
+        <p class="mb-2">Flexbox is great for aligning items inside a parent container.</p>
+        <div class="flex justify-center items-center h-32 bg-gray-200 border rounded-md">
+            <div class="w-20 h-20 bg-blue-500"></div>
+        </div>
+
+        <!-- Grid Example -->
+        <h2 class="text-xl font-semibold mt-6">2. Grid</h2>
+        <p class="mb-2">Grids allow for precise positioning.</p>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="w-20 h-20 bg-red-500"></div>
+            <div class="w-20 h-20 bg-green-500"></div>
+            <div class="w-20 h-20 bg-blue-500"></div>
+        </div>
+
+        <!-- Absolute Positioning Example -->
+        <h2 class="text-xl font-semibold mt-6">3. Absolute Positioning</h2>
+        <div class="relative h-32 bg-gray-200 border rounded-md">
+            <div class="absolute top-4 left-4 w-20 h-20 bg-yellow-500"></div>
+        </div>
+
+        <!-- Fixed Positioning Example -->
+        <h2 class="text-xl font-semibold mt-6">4. Fixed Positioning</h2>
+        <p class="mb-2">Use this for sticky headers, floating buttons, etc.</p>
+        <div class="fixed bottom-4 right-4 w-16 h-16 bg-purple-500"></div>
+
+        <!-- Sizing Example -->
+        <h2 class="text-xl font-semibold mt-6">5. Sizing</h2>
+        <div class="w-64 h-32 bg-gray-400"></div>
+
+        <!-- Spacing Example -->
+        <h2 class="text-xl font-semibold mt-6">6. Spacing & Alignment</h2>
+        <div class="m-10 p-5 bg-red-500 text-white text-center rounded-md">
+            Margin & Padding Example
+        </div>
+
+        <!-- Borders, Shadows, and Rounded Corners -->
+        <h2 class="text-xl font-semibold mt-6">7. Borders, Shadows & Rounded Corners</h2>
+        <div class="w-40 h-40 bg-white border-4 border-black shadow-lg rounded-2xl"></div>
+
+        <!-- Responsive Design Example -->
+        <h2 class="text-xl font-semibold mt-6">8. Responsive Design</h2>
+        <div class="w-40 h-40 bg-green-500 sm:w-64 md:w-80 lg:w-96"></div>
+    </div>
+</body>
+</html>

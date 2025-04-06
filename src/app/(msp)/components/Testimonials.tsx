@@ -35,7 +35,7 @@ export const Testimonials = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col justify-between w-full bg-gray-100 px-8 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-sm text-center leading-normal">
               <i>
                 Aditya Upadhyay is working as a PhD scholar under Dr. Awanish
@@ -91,14 +91,14 @@ interface AvatarProps {
 
 function Avatar({ image, name, title }: AvatarProps) {
   return (
-    <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+    <div className="flex justify-start mt-8 space-x-1">
+      <div className="flex-shrink-0 overflow-hidden rounded-full">
         <Image
           src={image}
-          width={40}
-          height={40}
+          width={70}
+          height={70}
           alt={name}
-          placeholder="blur"
+          // placeholder="blur"
         />
       </div>
       <div>

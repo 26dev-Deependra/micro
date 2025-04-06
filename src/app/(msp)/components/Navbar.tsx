@@ -7,9 +7,11 @@ import Image from "next/image";
 export const Navbar = () => {
   const navigation = [
     { name: "Home", path: "/" },
-    { name: "Tools", path: "/tools" },
+    { name: "Search", path: "/blast" },
+    { name: "MicroSpec", path: "/microspec" },
     { name: "Publications", path: "/publications" },
     { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -30,13 +32,10 @@ export const Navbar = () => {
             <span>MicroSpec</span>
           </span>
         </Link>
-        <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
-          <ThemeChanger />
-        </div>
 
         {/* menu  */}
         <div className="hidden lg:flex lg:items-center">
-          <ul className="items-start justify-end flex-1 pt-4 list-none lg:pt-0 lg:flex">
+          <ul className="items-start justify flex-1 pt-4 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-6 nav__item" key={index}>
                 <Link
