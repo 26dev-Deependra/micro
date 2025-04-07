@@ -42,8 +42,8 @@ export default function ContactPage() {
         <h1 className="text-2xl mt-8 font-bold mb-2">Contact Us</h1>
         <h6>
           <i>
-            (We’d love to hear from you. Whether you have a question, feedback,
-            or want to collaborate on the MicroSpec.)
+            (We would love to hear from you. Whether you have a question,
+            feedback, or want to collaborate on the MicroSpec.)
           </i>
         </h6>
         <form onSubmit={handleSubmit} className="space-y-8 mt-4">
