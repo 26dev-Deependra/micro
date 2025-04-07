@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "MicroSpec",
   description: "MicroSpec products",
   icons: {
-    icon: "./img/logo.png", // Path to your icon
+    icon: "/img/logo.png",
   },
 };
 

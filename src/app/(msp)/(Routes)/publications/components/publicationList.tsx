@@ -42,7 +42,6 @@ export default function PublicationList() {
         "Combinatorial therapeutic enzymes to combat multidrug resistance in bacteria",
       file: "/",
     },
-    // Add more publications here if needed
   ];
 
   return (

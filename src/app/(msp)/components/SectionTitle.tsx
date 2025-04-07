@@ -16,19 +16,19 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       }`}
     >
       {props.preTitle && (
-        <div className="text-lg font-bold tracking-wider text-blue-600 uppercase">
+        <div className="text-lg font-bold tracking-wider text-green-700 uppercase">
           {props.preTitle}
         </div>
       )}
 
       {props.title && (
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-green-700 lg:leading-tight lg:text-4xl dark:text-green-700">
           {props.title}
         </h2>
       )}
 
       {props.children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p className="max-w-5xl py-4 text-md leading-normal text-gray-700 lg:text-md xl:text-md dark:text-gray-300">
           {props.children}
         </p>
       )}

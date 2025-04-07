@@ -20,7 +20,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Learn More
 
 Project consists of two tools at the moment:
+
+# or
+
 1.MicroSpec : which is collection of CVspec and SEMspec
+
+# or
+
 2.BlastSearch
 
 ## Deploy on Vercel

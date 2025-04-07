@@ -13,15 +13,15 @@ export const submitProteinSequence = async (
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ sequence }),
     });
-
-    console.log("✅ Response status:", response.status);
-
     if (!response.ok) {
       throw new Error(`Submission failed: ${response.statusText}`);
     }
 
     const data = await response.json();
-    console.log("📩 BLAST Results:", data);
+    if (!data.matches || data.matches.length === 0) {
+      setResults([{ id: "none", message: "No match found" }]);
+      return [{ id: "none", message: "No match found" }];
+    }
 
     setResults(data.matches); // Call Zustand's setter from the component
     return data.matches;

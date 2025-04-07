@@ -4,7 +4,7 @@ import SemTools from "./components/SemTools";
 
 export default function pricing() {
   return (
-    <div className="p-10 ">
+    <div className="p-4 mb-6">
       <SectionTitle preTitle="tool-1" title="CV-Spec">
         CV-Spec features two tools: one for predicting the optical density (OD)
         of a given CV microscopic image and another for generating a CV image

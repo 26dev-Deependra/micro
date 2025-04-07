@@ -1,7 +1,7 @@
 export const uploadImageToAWS = async (imageFile: File) => {
   console.log("🚀 Function called with file:", imageFile);
 
-  const API_URL = "/api/proxy"; // Use Next.js API route instead of Flask API
+  const API_URL = "/api/spec_api"; // Use Next.js API route instead of Flask API
   const formData = new FormData();
   formData.append("file", imageFile);
 

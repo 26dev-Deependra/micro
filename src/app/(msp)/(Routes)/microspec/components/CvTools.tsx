@@ -13,7 +13,7 @@ export default function CvTools() {
     const file = event.target.files?.[0];
     if (file) {
       setImageFile(file);
-      setSelectedImage(URL.createObjectURL(file)); // ✅ Store image preview URL
+      setSelectedImage(URL.createObjectURL(file)); // Store image preview URL
     }
   };
 
@@ -66,7 +66,7 @@ export default function CvTools() {
               )}
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
                 disabled={loading}
               >
                 {loading ? "Processing..." : "Upload and Predict"}
@@ -85,14 +85,14 @@ export default function CvTools() {
                     {result >= 0.15 && result <= 0.2
                       ? "Initial Attachment"
                       : result >= 0.21 && result <= 0.26
-                      ? "Irreversible Attachment"
-                      : result >= 0.27 && result <= 0.32
-                      ? "Microcolony Formation"
-                      : result >= 0.33 && result <= 0.39
-                      ? "Biofilm Maturation"
-                      : result >= 0.4 && result <= 0.45
-                      ? "Dispersion"
-                      : "OD out of expected range"}
+                        ? "Irreversible Attachment"
+                        : result >= 0.27 && result <= 0.32
+                          ? "Microcolony Formation"
+                          : result >= 0.33 && result <= 0.39
+                            ? "Biofilm Maturation"
+                            : result >= 0.4 && result <= 0.45
+                              ? "Dispersion"
+                              : "OD out of expected range"}
                   </span>
                 </p>
               </div>

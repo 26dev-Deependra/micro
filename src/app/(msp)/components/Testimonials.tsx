@@ -2,9 +2,9 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { Container } from "./Container";
 
-import userOneImg from "@/app/(msp)/img/user1.jpg";
-import userTwoImg from "@/app/(msp)/img/user2.jpeg";
-import userThreeImg from "@/app/(msp)/img/user3.jpg";
+import userOneImg from "../../../../public/img/user1.jpg";
+import userTwoImg from "../../../../public/img/user2.jpg";
+import userThreeImg from "../../../../public/img/user3.jpg";
 
 export const Testimonials = () => {
   return (
@@ -12,12 +12,17 @@ export const Testimonials = () => {
       <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full bg-gray-100 px-8 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-sm text-center leading-normal">
+            <Avatar
+              image={userOneImg}
+              name="Awanish Kumar"
+              email="awanik.bt@nitrr.ac.in"
+            />
+            <br />
+            <p className="text-sm mt-2 text-center leading-normal">
               <i>
                 Dr. Awanish Kumar is working in the area of infection biology,
                 drug targeting, and drug discovery. Dr. Awanish Kumar has served
-                various national and international organizations with different
-                academic/research capacities.
+                various national and international organizations.
                 <br />
                 Associate Professor,
                 <br />
@@ -26,17 +31,16 @@ export const Testimonials = () => {
                 NIT-Raipur
               </i>
             </p>
-
-            <Avatar
-              image={userOneImg}
-              name="Awanish Kumar"
-              title="awanik.bt@nitrr.ac.in"
-            />
           </div>
         </div>
         <div>
           <div className="flex flex-col justify-between w-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-sm text-center leading-normal">
+            <Avatar
+              image={userTwoImg}
+              name="Aditya Upadhyay"
+              email="aditya.upadhyay1995@gmail.com"
+            />
+            <p className="text-sm mt-2 text-center leading-normal">
               <i>
                 Aditya Upadhyay is working as a PhD scholar under Dr. Awanish
                 Kumar in the area of infection biology, drug targeting, and drug
@@ -49,33 +53,26 @@ export const Testimonials = () => {
                 NIT-Raipur
               </i>
             </p>
-
-            <Avatar
-              image={userTwoImg}
-              name="Aditya Upadhyay"
-              title="aditya.upadhyay1995@gmail.com"
-            />
           </div>
         </div>
         <div>
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-sm text-center leading-normal">
+          <div className="flex flex-col justify-between w-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+            <Avatar
+              image={userThreeImg}
+              name="Deependra Singh"
+              email="26Singh.Deependra@gmail.com"
+            />
+            <p className="text-sm mt-2 text-center leading-normal">
               <i>
                 Deependra Singh is working under the guidance of Dr. Awanish
-                Kumar and Aditya Upadhyay for Biofilm-Spec design and
-                development.
+                Kumar and Aditya Upadhyay for the MicroSpec concept and it's
+                design and development.
                 <br />
                 B-Tech Student, <br />
                 Department of Biotechnology, <br />
                 NIT-Raipur
               </i>
             </p>
-
-            <Avatar
-              image={userThreeImg}
-              name="Deependra Singh"
-              title="26Singh.Deependra@gmail.com"
-            />
           </div>
         </div>
       </div>
@@ -86,27 +83,25 @@ export const Testimonials = () => {
 interface AvatarProps {
   image: StaticImageData; // ✅ Changed 'any' to 'StaticImageData'
   name: string;
-  title: string;
+  email: string;
 }
 
-function Avatar({ image, name, title }: AvatarProps) {
+function Avatar({ image, name, email }: AvatarProps) {
   return (
-    <div className="flex justify-start mt-8 space-x-1">
-      <div className="flex-shrink-0 overflow-hidden rounded-full">
+    <div className="flex flex-col items-center mt-2 space-y-2">
+      <div className=" overflow-hidden rounded-full">
         <Image
           src={image}
-          width={70}
-          height={70}
+          width={120}
+          height={120}
           alt={name}
-          // placeholder="blur"
+          className="object-cover"
         />
       </div>
-      <div>
+      <div className="text-center">
         <div className="text-lg font-medium">{name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{title}</div>
+        <div className="text-gray-600 dark:text-gray-400 text-sm">{email}</div>
       </div>
     </div>
   );
 }
-
-// ❌ Removed the unused Mark component to fix the error

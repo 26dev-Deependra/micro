@@ -29,18 +29,24 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-row">
-      <div className="basis-1/3 m-12">
+      <div className="basis-1/3 m-10">
         <Image
-          src="/img/mol1_transparent.png"
+          src="/img/hero.png"
           alt="image showing a protein"
-          width={500}
+          width={600}
           height={300}
           priority
         />
       </div>
       <div className="basis-2/3">
-        <h1 className="text-2xl mt-8 font-bold mb-4">Contact Us</h1>
-        <form onSubmit={handleSubmit} className="space-y-10">
+        <h1 className="text-2xl mt-8 font-bold mb-2">Contact Us</h1>
+        <h6>
+          <i>
+            (We’d love to hear from you. Whether you have a question, feedback,
+            or want to collaborate on the MicroSpec.)
+          </i>
+        </h6>
+        <form onSubmit={handleSubmit} className="space-y-8 mt-4">
           <input
             type="email"
             placeholder="Your Email"
@@ -58,7 +64,7 @@ export default function ContactPage() {
           />
           <button
             type="submit"
-            className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+            className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
           >
             Send Message
           </button>

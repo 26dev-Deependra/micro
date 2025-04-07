@@ -2,8 +2,8 @@ import { SectionTitle } from "../../components/SectionTitle";
 import { Testimonials } from "../../components/Testimonials";
 export default function about() {
   return (
-    <div className="p-10">
-      <SectionTitle preTitle="About Us" title="Who We Are ?">
+    <div className="p-4">
+      <SectionTitle preTitle="" title="Who We Are ?">
         We are a team of three from National Institute of Technology , Raipur
         working on MicroSpec which is an attempt to introduce machine learning
         analytics to the biofillm kinetics thus providing a before hand standard
