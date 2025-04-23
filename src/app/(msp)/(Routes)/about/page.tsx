@@ -5,9 +5,9 @@ export default function about() {
     <div className="p-4">
       <SectionTitle preTitle="" title="Who We Are ?">
         We are a team of three from National Institute of Technology , Raipur
-        working on MicroSpec which is an attempt to introduce machine learning
-        analytics to the biofillm kinetics thus providing a before hand standard
-        for microbial biofilms.
+        working on Biofilm Vision which is an attempt to introduce machine
+        learning analytics to the biofillm kinetics thus providing a before hand
+        standard for microbial biofilms.
       </SectionTitle>
 
       <Testimonials />

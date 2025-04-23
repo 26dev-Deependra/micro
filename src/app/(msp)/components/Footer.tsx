@@ -17,19 +17,20 @@ export function Footer() {
                 height="32"
                 className="w-8"
               />
-              <span>MicroSpec</span>
+              <span>Biofilm Vision</span>
             </div>
 
             <div className="max-w-md text-gray-700 dark:text-gray-300 text-xs mt-2">
-              MicroSpec is a service which aims to provide various tools like
-              Machine learning powered image analytical tools for bacteria
-              biofilms growth kinetics.
+              Biofilm Vision is a service which provides various tools like
+              Machine learning powered image analysis for bacteria biofilms
+              growth kinetics.
             </div>
           </div>
 
           {/* Right side: Copyright */}
           <div className="text-xs text-gray-700 dark:text-gray-300 mt-2 md:mt-0">
-            Copyright © {new Date().getFullYear()}. Made by <a>MicroSpec</a>
+            Copyright © {new Date().getFullYear()}. Made by{" "}
+            <a>Foundingene Corporation</a>
           </div>
         </div>
       </Container>

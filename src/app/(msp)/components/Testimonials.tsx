@@ -65,7 +65,7 @@ export const Testimonials = () => {
             <p className="text-sm mt-2 text-center leading-normal">
               <i>
                 Deependra Singh is working under the guidance of Dr. Awanish
-                Kumar and Aditya Upadhyay for the MicroSpec concept and its
+                Kumar and Aditya Upadhyay for the Biofilm Vision concept and its
                 design and development.
                 <br />
                 B-Tech Student, <br />

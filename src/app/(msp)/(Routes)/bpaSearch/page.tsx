@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { submitProteinSequence } from "../blast/actions/seq_submit"; // Import the function
+import { submitProteinSequence } from "./actions/seq_submit"; // Import the function
 import { useBlastStore } from "@/app/lib/store"; // Zustand store
 import { SectionTitle } from "../../components/SectionTitle";
 
@@ -24,13 +24,13 @@ export default function BlastPage() {
 
   return (
     <div className="container mx-auto p-6">
-      <SectionTitle preTitle="" title="BLAST Protein Analysis">
-        BLAST Protein Analysis Tool is our custom-built solution for rapid and
-        reliable protein sequence comparison.This tool enables users to input a
-        protein sequence and instantly identify similar proteins across curated
-        databases for Salmonella Typhi, helps uncover functional insights,
-        evolutionary relationships, and potential drug targets related to
-        salmonella Typhi.
+      <SectionTitle preTitle="" title="Salmonella Typhi BLAST Protein Analysis">
+        Salmonella BLAST Protein Analysis Tool is our custom-built solution for
+        rapid and reliable protein sequence comparison.This tool enables users
+        to input a protein sequence and instantly identify similar proteins
+        across curated databases for Salmonella Typhi, helps uncover functional
+        insights, evolutionary relationships, and potential drug targets related
+        to salmonella Typhi.
       </SectionTitle>
       <form onSubmit={handleSubmit} className="space-y-4">
         <textarea

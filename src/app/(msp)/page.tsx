@@ -7,7 +7,7 @@ export default function Home() {
     <Container>
       <Hero />
       <SectionTitle
-        preTitle="MicroSpec Benefits"
+        preTitle="Biofilm Vision Benefits"
         title="Revolutionizing Biofilm Analytics with AI"
       >
         Traditional Biofilm Analysis is slow, expensive, and uncertain. We use

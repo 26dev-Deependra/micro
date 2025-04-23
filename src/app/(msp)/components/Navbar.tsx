@@ -6,8 +6,8 @@ import ThemeChanger from "./DarkSwitch";
 export const Navbar = () => {
   const navigation = [
     { name: "Home", path: "/" },
-    { name: "BPA_Search", path: "/blast" },
-    { name: "MicroSpec", path: "/microspec" },
+    { name: "BPA_Search", path: "/bpaSearch" },
+    { name: "BiofilmVision", path: "/biofilmvision" },
     { name: "Publications", path: "/publications" },
     { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/contact" },
@@ -28,7 +28,7 @@ export const Navbar = () => {
                 className="w-8"
               />
             </span>
-            <span>MicroSpec</span>
+            <span>Biofilm Vision</span>
           </span>
         </Link>
         <ThemeChanger />

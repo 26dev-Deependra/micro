@@ -9,8 +9,8 @@ import { Footer } from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MicroSpec",
-  description: "MicroSpec products",
+  title: "Biofilm Vision",
+  description: "Foundingene products",
   icons: {
     icon: "/img/logo.png",
   },
