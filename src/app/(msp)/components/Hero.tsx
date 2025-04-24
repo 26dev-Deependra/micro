@@ -22,13 +22,13 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-8 mt-8 sm:space-x-8 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
-                href="/blast"
+                href="/bpaSearch"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-green-600 rounded-md"
               >
                 BPA_Search
               </Link>
               <Link
-                href="/microspec"
+                href="/biofilmvision"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-green-600 rounded-md"
               >
                 Biofilm Vision
