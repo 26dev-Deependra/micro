@@ -1,6 +1,6 @@
 export async function POST(req: Request) {
   try {
-    const API_URL = "http://13.233.5.230/CvPredict"; // Flask api endpoint.
+    const API_URL = "http://13.126.24.130/CvPredict"; // Flask api endpoint.
     const API_KEY = "your_hardcoded_api_key"; // Flask api endpoint key.
 
     const formData = await req.formData();
