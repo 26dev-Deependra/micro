@@ -1,6 +1,6 @@
 export async function POST(req: Request) {
   try {
-    const API_URL = "http://13.126.24.130/blast"; // Flask API endpoint
+    const API_URL = "http://3.110.54.157/blast"; // Flask API endpoint
     const API_KEY = "your_hardcoded_api_key";
 
     const requestBody = await req.json(); // Expecting JSON { sequence: "..." }
